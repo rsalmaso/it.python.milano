@@ -6,7 +6,7 @@ raggiungibile da qui -> [milano.python.it](http://milano.python.it/)
 
 ## Come contribuire
 
-Il sito è sviluppato con `node`, per contribuire è necessario averlo installato, almeno la versione `6` (funziona anche con `yarn`)
+Il sito è sviluppato con `node`, è possibile contribuire usando docker.
 
 per ora utilizziamo solo `scss`, in futuro si vedrà :)
 
@@ -30,6 +30,12 @@ npm i
 npm run build
 ```
 
+# Usando docker o podman
+
+```
+podman build -t pythonmilano .
+podman run --name pythonmilano --rm -p 8080:8080 pythonmilano
+```
 
 ## Credits
 
